@@ -3,13 +3,12 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import Logo from "../Navbar/Logo";
 import Container from "../ui/Container";
 import { socialIconMap } from "../ui/socialIcons";
-import { services } from "../../utils/data";
+import { services, offices } from "../../utils/data";
 
 const quickLinks = [
   { label: "Home", href: "/#home" },
   { label: "About Us", href: "/#about" },
   { label: "Industries", href: "/#industries" },
-  { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -105,24 +104,31 @@ export default function Footer() {
             <h3 className="mb-5 text-sm font-semibold uppercase tracking-widest text-white">
               Contact
             </h3>
-            <ul className="space-y-4 text-sm">
-              <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-sky-accent" />
-                <span>500 Innovation Drive, Suite 320, Austin, TX 78701</span>
-              </li>
-              <li className="flex items-center gap-3">
+            <div className="space-y-5 text-sm">
+              {offices.map((office) => (
+                <div key={office.country}>
+                  <p className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-sky-accent">
+                    {office.country}
+                  </p>
+                  <div className="flex items-start gap-3">
+                    <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-sky-accent" />
+                    <span>{office.address}</span>
+                  </div>
+                  <div className="mt-2 flex items-center gap-3">
+                    <Phone className="h-4 w-4 shrink-0 text-sky-accent" />
+                    <a href={`tel:${office.phoneHref}`} className="hover:text-sky-accent">
+                      {office.phone}
+                    </a>
+                  </div>
+                </div>
+              ))}
+              <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-sky-accent" />
                 <a href="mailto:hello@caeluna.com" className="hover:text-sky-accent">
                   hello@caeluna.com
                 </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="h-4 w-4 shrink-0 text-sky-accent" />
-                <a href="tel:+15125550142" className="hover:text-sky-accent">
-                  +1 (512) 555-0142
-                </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
 

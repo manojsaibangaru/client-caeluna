@@ -7,7 +7,6 @@ import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import Industries from "../components/Industries/Industries";
 import Technologies from "../components/Technologies/Technologies";
 import Process from "../components/Process/Process";
-import Testimonials from "../components/Testimonials/Testimonials";
 import Statistics from "../components/Statistics/Statistics";
 import FAQ from "../components/FAQ/FAQ";
 import Contact from "../components/Contact/Contact";
@@ -35,7 +34,6 @@ export default function Home() {
       <Industries />
       <Technologies />
       <Process />
-      <Testimonials />
       <Statistics />
       <FAQ />
       <Contact />

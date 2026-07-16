@@ -32,8 +32,24 @@ export const navLinks = [
   { label: "Services", href: "/#services" },
   { label: "Industries", href: "/#industries" },
   { label: "Technologies", href: "/#technologies" },
-  { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/#contact" },
+];
+
+export const offices = [
+  {
+    country: "India",
+    address: "Plot-20, Ganesh Nagar Colony, Near Panama Bus Stop, Vanasthalipuram, Hyderabad 500070",
+    phone: "+91 6302640536",
+    phoneHref: "+916302640536",
+    hours: "6:00 PM – 4:00 AM IST",
+  },
+  {
+    country: "USA",
+    address: "5460 Babcock Rd, Suite 120 #187, San Antonio, TX 78240",
+    phone: "+1 908 316 3885",
+    phoneHref: "+19083163885",
+    hours: "6:30 AM – 4:30 PM Central Time",
+  },
 ];
 
 export const services = [
@@ -167,36 +183,6 @@ export const processSteps = [
     icon: LifeBuoy,
     title: "Support",
     description: "Ongoing monitoring, optimization, and 24×7 support post-launch.",
-  },
-];
-
-export const testimonials = [
-  {
-    name: "Sarah Mitchell",
-    role: "CTO",
-    company: "Northbridge Retail Group",
-    avatar: "SM",
-    rating: 5,
-    review:
-      "CAELUNA modernized our entire cloud infrastructure ahead of schedule. Their team communicated clearly at every step and the results exceeded expectations.",
-  },
-  {
-    name: "David Chen",
-    role: "VP of Engineering",
-    company: "Meridian Health Systems",
-    avatar: "DC",
-    rating: 5,
-    review:
-      "The security overhaul CAELUNA delivered gave our board real confidence. Thorough, professional, and genuinely invested in our success.",
-  },
-  {
-    name: "Amara Okafor",
-    role: "Head of Digital",
-    company: "Sterling Financial Partners",
-    avatar: "AO",
-    rating: 5,
-    review:
-      "Their DevOps team cut our release cycle from weeks to days. CAELUNA feels like an extension of our own engineering organization.",
   },
 ];
 

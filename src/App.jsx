@@ -6,7 +6,6 @@ import Footer from "./components/Footer/Footer";
 import Loader from "./components/ui/Loader";
 
 const Home = lazy(() => import("./pages/Home"));
-const Careers = lazy(() => import("./pages/Careers"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsConditions = lazy(() => import("./pages/TermsConditions"));
 const NotFound = lazy(() => import("./pages/NotFound"));
@@ -46,14 +45,6 @@ export default function App() {
                 element={
                   <AnimatedPage>
                     <Home />
-                  </AnimatedPage>
-                }
-              />
-              <Route
-                path="/careers"
-                element={
-                  <AnimatedPage>
-                    <Careers />
                   </AnimatedPage>
                 }
               />

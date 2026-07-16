@@ -1,8 +1,8 @@
 # CAELUNA — Corporate Website (Demo)
 
 A modern, fully responsive corporate website demo for **CAELUNA**, a placeholder
-enterprise IT consulting brand. Built for client approval — all copy, branding,
-and contact details are placeholders to be replaced with final content.
+enterprise IT consulting brand. Built for client approval — a simple, single-page
+site to showcase services, with no contact form or careers section.
 
 ## Tech Stack
 
@@ -11,8 +11,6 @@ and contact details are placeholders to be replaced with final content.
 - React Router
 - Framer Motion
 - Lucide React Icons
-- React Hook Form
-- EmailJS (`@emailjs/browser`, placeholder credentials)
 
 ## Getting Started
 
@@ -31,12 +29,12 @@ src/
 ├── assets/
 ├── components/
 │   ├── Navbar/ Hero/ About/ Services/ WhyChooseUs/
-│   ├── Industries/ Technologies/ Process/ Testimonials/
+│   ├── Industries/ Technologies/ Process/
 │   ├── Statistics/ FAQ/ Contact/ Footer/
 │   └── ui/            # shared primitives (Button, Container, Reveal, ...)
-├── pages/             # Home, Careers, PrivacyPolicy, TermsConditions, NotFound
+├── pages/             # Home, PrivacyPolicy, TermsConditions, NotFound
 ├── hooks/
-├── utils/             # placeholder content/data
+├── utils/             # site content/data (offices, services, FAQ, etc.)
 ├── App.jsx
 └── main.jsx
 ```
@@ -46,7 +44,7 @@ src/
 Before launch, replace:
 
 - Placeholder copy and stats in `src/utils/data.js`
-- Office address, email, and phone in `Footer.jsx` and `Contact.jsx`
-- EmailJS service/template/public key placeholders in `ContactForm.jsx`
-- The Google Maps placeholder in `Contact.jsx` with a real embed
+- Real social media links in `src/components/ui/socialIcons.js` usage sites
+  (`Footer.jsx` and `Contact.jsx`)
 - Favicon and any imagery in `public/` and `src/assets/`
+- SEO metadata (`index.html`) once the final domain is known
