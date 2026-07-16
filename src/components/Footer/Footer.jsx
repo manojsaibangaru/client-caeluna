@@ -1,5 +1,5 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 import Logo from "../Navbar/Logo";
 import Container from "../ui/Container";
 import { socialIconMap } from "../ui/socialIcons";
@@ -122,18 +122,12 @@ export default function Footer() {
                   </div>
                 </div>
               ))}
-              <div className="flex items-center gap-3">
-                <Mail className="h-4 w-4 shrink-0 text-sky-accent" />
-                <a href="mailto:hello@caeluna.com" className="hover:text-sky-accent">
-                  hello@caeluna.com
-                </a>
-              </div>
             </div>
           </div>
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-navy-400 sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} CAELUNA. All rights reserved. Demo site for client approval.</p>
+          <p>&copy; {new Date().getFullYear()} CAELUNA. All rights reserved.</p>
           <div className="flex gap-6">
             <Link to="/privacy-policy" className="hover:text-sky-accent">
               Privacy Policy

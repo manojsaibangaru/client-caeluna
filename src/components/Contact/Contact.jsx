@@ -1,11 +1,8 @@
-import { Mail, MapPin, Phone, Clock } from "lucide-react";
+import { MapPin, Phone, Clock } from "lucide-react";
 import Container from "../ui/Container";
 import SectionHeading from "../ui/SectionHeading";
 import Reveal from "../ui/Reveal";
-import { socialIconMap } from "../ui/socialIcons";
 import { offices } from "../../utils/data";
-
-const socialIcons = Object.entries(socialIconMap).map(([label, icon]) => ({ icon, label }));
 
 export default function Contact() {
   return (
@@ -48,33 +45,6 @@ export default function Contact() {
             </Reveal>
           ))}
         </div>
-
-        <Reveal variant="up" delay={0.2} className="mt-10">
-          <div className="flex flex-col items-center gap-5 rounded-3xl border border-navy-100 bg-white p-8 text-center shadow-sm sm:flex-row sm:justify-between sm:text-left">
-            <div className="flex items-center gap-3">
-              <Mail className="h-5 w-5 shrink-0 text-navy-600" />
-              <a
-                href="mailto:hello@caeluna.com"
-                className="text-sm font-medium text-navy-800 hover:text-navy-600"
-              >
-                hello@caeluna.com
-              </a>
-            </div>
-
-            <div className="flex items-center gap-3">
-              {socialIcons.map(({ icon: Icon, label }) => (
-                <a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-navy-200 text-navy-600 transition-colors hover:border-navy-800 hover:bg-navy-800 hover:text-white"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
-          </div>
-        </Reveal>
       </Container>
     </section>
   );

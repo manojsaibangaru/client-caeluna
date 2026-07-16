@@ -5,10 +5,8 @@ import About from "../components/About/About";
 import Services from "../components/Services/Services";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import Industries from "../components/Industries/Industries";
-import Technologies from "../components/Technologies/Technologies";
 import Process from "../components/Process/Process";
 import Statistics from "../components/Statistics/Statistics";
-import FAQ from "../components/FAQ/FAQ";
 import Contact from "../components/Contact/Contact";
 
 export default function Home() {
@@ -32,10 +30,8 @@ export default function Home() {
       <Services />
       <WhyChooseUs />
       <Industries />
-      <Technologies />
       <Process />
       <Statistics />
-      <FAQ />
       <Contact />
     </>
   );

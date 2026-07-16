@@ -31,7 +31,6 @@ export const navLinks = [
   { label: "About", href: "/#about" },
   { label: "Services", href: "/#services" },
   { label: "Industries", href: "/#industries" },
-  { label: "Technologies", href: "/#technologies" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -133,21 +132,6 @@ export const industries = [
   { icon: Building2, title: "Government" },
 ];
 
-export const technologies = [
-  "AWS",
-  "Azure",
-  "Google Cloud",
-  "React",
-  "Angular",
-  "Node.js",
-  "Java",
-  "Python",
-  "Docker",
-  "Kubernetes",
-  "PostgreSQL",
-  "MongoDB",
-];
-
 export const processSteps = [
   {
     icon: Search,
@@ -193,47 +177,3 @@ export const stats = [
   { label: "Team Members", value: 85, suffix: "+" },
 ];
 
-export const faqs = [
-  {
-    question: "What industries does CAELUNA work with?",
-    answer:
-      "We partner with organizations across healthcare, banking, retail, manufacturing, education, and government, tailoring our approach to each industry's regulatory and operational needs.",
-  },
-  {
-    question: "How long does a typical engagement take?",
-    answer:
-      "Timelines vary by scope — a focused cloud migration may take 6-8 weeks, while a full digital transformation program can span 6-12 months. We define milestones during Discovery so you always know what to expect.",
-  },
-  {
-    question: "Do you offer ongoing support after project delivery?",
-    answer:
-      "Yes. Every engagement includes a support plan, and we offer 24x7 monitoring and maintenance retainers for clients who want continuous coverage.",
-  },
-  {
-    question: "Can you work with our existing in-house engineering team?",
-    answer:
-      "Absolutely. We regularly operate as an embedded extension of internal teams, aligning on tooling, workflows, and communication cadence from day one.",
-  },
-  {
-    question: "What is your approach to data security and compliance?",
-    answer:
-      "Security is built into every phase of our process, not bolted on at the end. We align with frameworks like SOC 2, HIPAA, and GDPR depending on your industry requirements.",
-  },
-  {
-    question: "How do you price your services?",
-    answer:
-      "We offer fixed-scope, time-and-materials, and dedicated team pricing models. During our discovery call we recommend the structure that best fits your project and budget.",
-  },
-  {
-    question: "Do you support legacy system modernization?",
-    answer:
-      "Yes, modernizing legacy platforms is one of our core specialties, from re-platforming monoliths to phased migrations that minimize business disruption.",
-  },
-];
-
-export const socialLinks = [
-  { name: "LinkedIn", href: "#" },
-  { name: "Twitter", href: "#" },
-  { name: "Facebook", href: "#" },
-  { name: "Instagram", href: "#" },
-];
