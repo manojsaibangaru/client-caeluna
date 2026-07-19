@@ -53,8 +53,8 @@ quoted strings between the `"..."` marks and save.
 | Office addresses, phone numbers, business hours            | `src/utils/data.js` (`offices` array) — used automatically by both the Contact section and the Footer |
 | Company email address                                      | `src/components/Contact/Contact.jsx` (search for `info@caelunaglobal.com`) |
 | Footer text, quick links, services list                    | `src/components/Footer/Footer.jsx` |
-| Logo (icon + wordmark)                                      | `src/components/Navbar/Logo.jsx` |
-| Favicon (browser tab icon)                                  | `public/favicon.svg` |
+| Logo icon image                                              | `src/assets/logo-mark.png` (swap the file, keep the same filename, or update the import path in `src/components/Navbar/Logo.jsx`) |
+| Favicon (browser tab icon)                                  | `public/favicon.png` |
 | Privacy Policy text                                         | `src/pages/PrivacyPolicy.jsx` |
 | Terms & Conditions text                                     | `src/pages/TermsConditions.jsx` |
 | Page title / meta description (for Google search results)   | `index.html` |
@@ -64,7 +64,11 @@ quoted strings between the `"..."` marks and save.
 
 ```
 src/
-├── assets/                 (currently empty — add real images/logo files here)
+├── assets/
+│   ├── logo-mark.png        Cropped icon mark, used in the Navbar/Footer logo
+│   └── logo-full.png        Original full logo artwork the client provided
+│                             (icon + wordmark + tagline), kept for future use
+│                             e.g. a social share image
 ├── components/
 │   ├── Navbar/              Sticky nav bar + logo
 │   ├── Hero/                Homepage hero banner
@@ -102,9 +106,18 @@ happened, so it's clear what changed and why.
    and Privacy Policy / Terms & Conditions placeholder pages. All content
    at this stage was placeholder text for client review.
 
-2. **Real logo shared.** Client provided the official CAELUNA Global logo
-   (navy/blue globe mark). It hasn't been placed into the code yet — see
-   **Outstanding Items** below.
+2. **Real logo shared and integrated.** Client provided the official
+   CAELUNA logo artwork (a navy hexagon badge with a moon/mountains mark,
+   the "CAELUNA" wordmark, and tagline "Smart Solutions. Stronger
+   Futures."). It's a large square poster-style graphic on a solid navy
+   background, not pre-sized for a navbar or favicon, so the hexagon icon
+   was cropped out and saved as `src/assets/logo-mark.png` for the
+   Navbar/Footer logo and `public/favicon.png` for the browser tab icon;
+   the full original artwork is kept at `src/assets/logo-full.png` for
+   possible future use (e.g. a social share image). The "CAELUNA" text
+   next to the icon is still rendered as live text (not part of the
+   image), so it automatically adapts color between the light and dark
+   navbar states.
 
 3. **Scope simplified per client direction.** The client clarified this
    should be a simple, form-free services showcase — not a lead-gen site.
@@ -143,14 +156,14 @@ happened, so it's clear what changed and why.
    details and email now live in one place — the Contact section and
    Footer).
 
+9. **Real logo integrated.** Replaced the placeholder generated icon in
+   the navbar, footer, and favicon with the client's actual logo mark
+   (see item 2 above).
+
 ---
 
 ## 6. Outstanding Items (Need From Client)
 
-- **Logo file.** The site currently uses a placeholder generated icon in
-  the navbar, footer, and favicon. Once the real logo file (ideally a
-  transparent-background PNG or SVG) is added to `src/assets/`, it needs
-  to be wired into `src/components/Navbar/Logo.jsx` and `public/favicon.svg`.
 - **Domain name.** The client mentioned purchasing a domain via Cloudflare.
   Once confirmed, `index.html`'s SEO metadata (title, description, social
   preview tags) should be updated to reference it.
