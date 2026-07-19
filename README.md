@@ -169,18 +169,30 @@ happened, so it's clear what changed and why.
     The floating "Cloud Native / Zero-Trust Security / AI Powered / 99.9%
     Uptime" badges were kept as-is around it.
 
+11. **Domain wired in, dead social icons removed.** Client confirmed a
+    domain was purchased via Cloudflare but didn't give the exact string,
+    so `index.html`'s canonical/`og:url` tags were set to
+    `https://caelunaglobal.com` inferred from the `info@caelunaglobal.com`
+    contact email — **double-check this matches the real domain**. Also
+    removed the LinkedIn/Twitter/Facebook/Instagram icon row from the
+    Footer entirely, since those linked to `#` (nowhere) with no real
+    profile URLs available yet.
+
 ---
 
 ## 6. Outstanding Items (Need From Client)
 
-- **Domain name.** The client mentioned purchasing a domain via Cloudflare.
-  Once confirmed, `index.html`'s SEO metadata (title, description, social
-  preview tags) should be updated to reference it.
+- **Confirm the domain.** `index.html` currently assumes
+  `caelunaglobal.com` based on the contact email. If that's not the
+  correct domain, update the `og:url` and `<link rel="canonical">` tags
+  in `index.html`.
 - **Legal review.** The Privacy Policy and Terms & Conditions currently
   contain only the text the client provided. Given the company operates in
   both India and the US, we'd recommend a lawyer review these before the
   site goes live, in case additional clauses (data retention, cookies,
   liability, governing law) are needed.
-- **Real social media links.** LinkedIn/Twitter/Facebook/Instagram icons in
-  the Footer currently link to `#` (nowhere). Replace with real profile
-  URLs in `src/components/Footer/Footer.jsx` once available.
+- **Real social media links (optional).** Social icons were removed from
+  the Footer since they had no real destinations. If the client wants them
+  back, add real profile URLs — see the git history for the removed code
+  (`src/components/ui/socialIcons.js` and the icon row in `Footer.jsx`) as
+  a starting point.

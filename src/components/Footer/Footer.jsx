@@ -2,7 +2,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Phone, MapPin } from "lucide-react";
 import Logo from "../Navbar/Logo";
 import Container from "../ui/Container";
-import { socialIconMap } from "../ui/socialIcons";
 import { services, offices } from "../../utils/data";
 
 const quickLinks = [
@@ -39,21 +38,6 @@ export default function Footer() {
               CAELUNA is an enterprise IT consulting partner helping organizations modernize
               cloud infrastructure, secure their systems, and build software that scales.
             </p>
-            <div className="mt-6 flex gap-3">
-              {["LinkedIn", "Twitter", "Facebook", "Instagram"].map((name) => {
-                const Icon = socialIconMap[name];
-                return (
-                  <a
-                    key={name}
-                    href="#"
-                    aria-label={name}
-                    className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-navy-200 transition-colors hover:border-sky-accent/50 hover:text-sky-accent"
-                  >
-                    <Icon className="h-4 w-4" />
-                  </a>
-                );
-              })}
-            </div>
           </div>
 
           <div>
