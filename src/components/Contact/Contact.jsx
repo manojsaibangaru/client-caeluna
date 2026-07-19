@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock } from "lucide-react";
+import { Mail, MapPin, Phone, Clock } from "lucide-react";
 import Container from "../ui/Container";
 import SectionHeading from "../ui/SectionHeading";
 import Reveal from "../ui/Reveal";
@@ -45,6 +45,18 @@ export default function Contact() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal variant="up" delay={0.2} className="mt-10">
+          <div className="flex items-center justify-center gap-3 rounded-2xl border border-navy-100 bg-navy-50/50 p-6">
+            <Mail className="h-5 w-5 shrink-0 text-navy-600" />
+            <a
+              href="mailto:info@caelunaglobal.com"
+              className="text-sm font-medium text-navy-800 hover:text-navy-600"
+            >
+              info@caelunaglobal.com
+            </a>
+          </div>
+        </Reveal>
       </Container>
     </section>
   );

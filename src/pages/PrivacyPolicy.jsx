@@ -20,20 +20,6 @@ export default function PrivacyPolicy() {
             disclose, store, and protect information obtained through our website and
             recruitment services.
           </p>
-
-          <div>
-            <h2 className="mb-2 font-display text-xl font-semibold text-navy-900">
-              Contact Us
-            </h2>
-            <p>
-              Plot-20, Ganesh Nagar, Vanasthalipuram, Hyderabad 500070
-              <br />
-              Email:{" "}
-              <a href="mailto:info@caelunaglobal.com" className="text-navy-800 hover:text-navy-600">
-                info@caelunaglobal.com
-              </a>
-            </p>
-          </div>
         </div>
       </Container>
     </section>

@@ -31,20 +31,6 @@ export default function TermsConditions() {
             </p>
             <p className="mt-3">You agree to use this website only for lawful purposes.</p>
           </div>
-
-          <div>
-            <h2 className="mb-2 font-display text-xl font-semibold text-navy-900">
-              Contact Us
-            </h2>
-            <p>
-              Plot-20, Ganesh Nagar, Vanasthalipuram, Hyderabad 500070
-              <br />
-              Email:{" "}
-              <a href="mailto:info@caelunaglobal.com" className="text-navy-800 hover:text-navy-600">
-                info@caelunaglobal.com
-              </a>
-            </p>
-          </div>
         </div>
       </Container>
     </section>
