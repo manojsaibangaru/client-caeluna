@@ -83,9 +83,9 @@ export default function Hero() {
             alt="CAELUNA — Smart Solutions. Stronger Futures."
             className="relative z-[1] w-full"
             style={{
-              maskImage: "linear-gradient(to bottom, transparent, black 6%, black 94%, transparent)",
+              maskImage: "linear-gradient(to bottom, transparent, black 6%, black 96%, transparent)",
               WebkitMaskImage:
-                "linear-gradient(to bottom, transparent, black 6%, black 94%, transparent)",
+                "linear-gradient(to bottom, transparent, black 6%, black 96%, transparent)",
             }}
           />
 
