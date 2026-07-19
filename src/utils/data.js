@@ -37,7 +37,7 @@ export const navLinks = [
 export const offices = [
   {
     country: "India",
-    address: "Plot-20, Ganesh Nagar Colony, Near Panama Bus Stop, Vanasthalipuram, Hyderabad 500070",
+    address: "Plot-20, Ganesh Nagar, Vanasthalipuram, Hyderabad 500070",
     phone: "+91 6302640536",
     phoneHref: "+916302640536",
     hours: "6:00 PM – 4:00 AM IST",
