@@ -48,21 +48,21 @@ export default function Navbar() {
             <Logo />
           </Link>
 
-          <ul className="hidden items-center gap-8 lg:flex">
+          <ul className="hidden items-center gap-9 lg:flex">
             {navLinks.map((link) => (
               <li key={link.label}>
                 {link.href.startsWith("/#") ? (
                   <a
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
-                    className="text-sm font-medium text-navy-700 transition-colors hover:text-navy-500"
+                    className="text-base font-semibold text-navy-700 transition-colors hover:text-navy-500"
                   >
                     {link.label}
                   </a>
                 ) : (
                   <Link
                     to={link.href}
-                    className="text-sm font-medium text-navy-700 transition-colors hover:text-navy-500"
+                    className="text-base font-semibold text-navy-700 transition-colors hover:text-navy-500"
                   >
                     {link.label}
                   </Link>
@@ -75,7 +75,7 @@ export default function Navbar() {
             <Button
               href="/#contact"
               onClick={(e) => handleNavClick(e, "/#contact")}
-              className="!py-2.5 !px-6 !text-xs"
+              className="!py-3 !px-7 !text-sm"
             >
               Get Started
             </Button>
@@ -110,14 +110,14 @@ export default function Navbar() {
                       <a
                         href={link.href}
                         onClick={(e) => handleNavClick(e, link.href)}
-                        className="block rounded-lg px-3 py-3 text-base font-medium text-navy-800 hover:bg-navy-50"
+                        className="block rounded-lg px-3 py-3 text-lg font-semibold text-navy-800 hover:bg-navy-50"
                       >
                         {link.label}
                       </a>
                     ) : (
                       <Link
                         to={link.href}
-                        className="block rounded-lg px-3 py-3 text-base font-medium text-navy-800 hover:bg-navy-50"
+                        className="block rounded-lg px-3 py-3 text-lg font-semibold text-navy-800 hover:bg-navy-50"
                       >
                         {link.label}
                       </Link>

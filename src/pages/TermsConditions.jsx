@@ -9,33 +9,27 @@ export default function TermsConditions() {
   return (
     <section className="bg-white pb-24 pt-40">
       <Container className="max-w-3xl">
-        <h1 className="font-display text-4xl font-bold text-navy-900">Terms &amp; Conditions</h1>
-        <p className="mt-3 text-sm text-navy-400">Placeholder document — last updated for demo purposes only.</p>
+        <h1 className="font-display text-4xl font-bold text-navy-900">Terms and Conditions</h1>
 
         <div className="mt-10 flex flex-col gap-8 text-navy-600">
+          <p>Welcome to the website of Caeluna Technologies Private Limited.</p>
+
           <p>
-            These Terms &amp; Conditions are placeholder content for the CAELUNA demo website
-            and will be replaced with a final, legally reviewed version prior to launch.
+            These Terms and Conditions govern your access to and use of our website and
+            services. By accessing or using this website, you agree to comply with these Terms.
+            If you do not agree, please discontinue use of the website.
           </p>
 
           <div>
             <h2 className="mb-2 font-display text-xl font-semibold text-navy-900">
-              Use of This Site
+              Website Use
             </h2>
             <p>
-              This website is provided for demonstration purposes. Content, branding, and
-              imagery are placeholders and do not represent a live commercial offering.
+              The information provided on this website is intended solely for general
+              informational and business purposes relating to our recruitment, staffing,
+              consulting, and technology services.
             </p>
-          </div>
-
-          <div>
-            <h2 className="mb-2 font-display text-xl font-semibold text-navy-900">
-              Intellectual Property
-            </h2>
-            <p>
-              All placeholder content is provided for client review only and is not licensed
-              for redistribution.
-            </p>
+            <p className="mt-3">You agree to use this website only for lawful purposes.</p>
           </div>
 
           <div>
@@ -43,7 +37,12 @@ export default function TermsConditions() {
               Contact Us
             </h2>
             <p>
-              Questions about these terms can be directed to hello@caeluna.com.
+              Plot-20, Ganesh Nagar, Vanasthalipuram, Hyderabad 500070
+              <br />
+              Email:{" "}
+              <a href="mailto:info@caelunaglobal.com" className="text-navy-800 hover:text-navy-600">
+                info@caelunaglobal.com
+              </a>
             </p>
           </div>
         </div>
