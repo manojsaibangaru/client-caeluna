@@ -6,10 +6,10 @@ import GradientBlob from "../ui/GradientBlob";
 import logoHero from "../../assets/logo-hero.png";
 
 const floatingBadges = [
-  { icon: Cloud, label: "Cloud Native", className: "top-4 -left-6 sm:left-2", delay: 0 },
-  { icon: ShieldCheck, label: "Zero-Trust Security", className: "top-40 -right-4 sm:right-0", delay: 0.6 },
-  { icon: BrainCircuit, label: "AI Powered", className: "bottom-24 -left-8 sm:left-0", delay: 1.1 },
-  { icon: TrendingUp, label: "99.9% Uptime", className: "bottom-4 right-6 sm:right-12", delay: 1.6 },
+  { icon: Cloud, label: "Cloud Native", className: "-top-2 -left-4 sm:-left-8", delay: 0 },
+  { icon: ShieldCheck, label: "Zero-Trust Security", className: "top-1/3 -right-4 sm:-right-10", delay: 0.6 },
+  { icon: BrainCircuit, label: "AI Powered", className: "-bottom-9 -left-6 sm:-left-14", delay: 1.1 },
+  { icon: TrendingUp, label: "99.9% Uptime", className: "-bottom-9 -right-2 sm:-right-10", delay: 1.6 },
 ];
 
 export default function Hero() {
@@ -76,13 +76,17 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="relative mx-auto hidden aspect-square w-full max-w-md items-center justify-center sm:flex lg:max-w-lg"
+          className="relative mx-auto hidden w-full max-w-lg items-center justify-center sm:flex lg:max-w-2xl"
         >
-          <div className="absolute inset-8 rounded-[2.5rem] border border-white/10 bg-gradient-to-br from-white/[0.08] to-transparent backdrop-blur-sm" />
           <img
             src={logoHero}
             alt="CAELUNA — Smart Solutions. Stronger Futures."
-            className="relative z-[1] w-64 drop-shadow-2xl sm:w-72 lg:w-80"
+            className="relative z-[1] w-full"
+            style={{
+              maskImage: "linear-gradient(to bottom, transparent, black 6%, black 94%, transparent)",
+              WebkitMaskImage:
+                "linear-gradient(to bottom, transparent, black 6%, black 94%, transparent)",
+            }}
           />
 
           {floatingBadges.map(({ icon: Icon, label, className, delay }) => (
