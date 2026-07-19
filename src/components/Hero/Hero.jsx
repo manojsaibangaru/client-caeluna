@@ -3,6 +3,7 @@ import { ChevronDown, ShieldCheck, Cloud, BrainCircuit, TrendingUp } from "lucid
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 import GradientBlob from "../ui/GradientBlob";
+import logoHero from "../../assets/logo-hero.png";
 
 const floatingBadges = [
   { icon: Cloud, label: "Cloud Native", className: "top-4 -left-6 sm:left-2", delay: 0 },
@@ -78,19 +79,11 @@ export default function Hero() {
           className="relative mx-auto hidden aspect-square w-full max-w-md items-center justify-center sm:flex lg:max-w-lg"
         >
           <div className="absolute inset-8 rounded-[2.5rem] border border-white/10 bg-gradient-to-br from-white/[0.08] to-transparent backdrop-blur-sm" />
-          <div className="glass-dark relative flex h-72 w-72 flex-col items-center justify-center gap-4 rounded-[2rem] p-8 shadow-2xl sm:h-80 sm:w-80">
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-accent to-sky-accent-2 shadow-lg shadow-sky-accent/30">
-              <BrainCircuit className="h-8 w-8 text-white" />
-            </div>
-            <p className="font-display text-lg font-semibold text-white">Unified Platform</p>
-            <p className="text-center text-sm text-navy-300">
-              Cloud, AI, and security orchestrated in one intelligent layer.
-            </p>
-            <div className="mt-2 flex w-full items-center justify-between rounded-xl bg-white/5 px-4 py-3 text-xs text-navy-200">
-              <span>System Health</span>
-              <span className="font-semibold text-emerald-400">Optimal</span>
-            </div>
-          </div>
+          <img
+            src={logoHero}
+            alt="CAELUNA — Smart Solutions. Stronger Futures."
+            className="relative z-[1] w-64 drop-shadow-2xl sm:w-72 lg:w-80"
+          />
 
           {floatingBadges.map(({ icon: Icon, label, className, delay }) => (
             <motion.div

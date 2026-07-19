@@ -160,6 +160,15 @@ happened, so it's clear what changed and why.
    the navbar, footer, and favicon with the client's actual logo mark
    (see item 2 above).
 
+10. **Logo featured prominently in the hero.** Replaced the generic
+    abstract "Unified Platform" mockup graphic on the homepage hero with
+    the client's actual logo (icon, wordmark, and tagline), cropped from
+    the original artwork and saved as `src/assets/logo-hero.png`. The
+    logo's navy background blends directly into the hero's background
+    color, so it reads as part of the page rather than a boxed-in image.
+    The floating "Cloud Native / Zero-Trust Security / AI Powered / 99.9%
+    Uptime" badges were kept as-is around it.
+
 ---
 
 ## 6. Outstanding Items (Need From Client)
